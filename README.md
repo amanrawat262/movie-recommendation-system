@@ -1,136 +1,115 @@
-# movie-recommendation-system
-🎬 Movie Recommendation System
+# 🎬 Movie Recommendation System
 
-A content-based movie recommendation system built using Python and Machine Learning, designed to suggest movies similar to a user's choice based on metadata such as genres, keywords, cast, and crew.
+A **content-based movie recommendation system** built using **Python and Machine Learning**, designed to suggest movies similar to a user's choice based on metadata such as genres, keywords, cast, and crew.
 
-This project focuses on feature engineering, text vectorization, and similarity computation, and serves as a strong foundational ML project for data science portfolios.
+This project focuses on **feature engineering, text vectorization, and similarity computation**, and serves as a strong foundational ML project for data science portfolios.
 
-🚀 Project Overview
+---
 
-Recommendation systems are widely used by platforms like Netflix, Amazon Prime, and YouTube to personalize user experience.
-This project implements a Content-Based Filtering approach where recommendations are made by analyzing movie attributes rather than user behavior.
+## 🚀 Project Overview
 
-The system:
+Recommendation systems are widely used by platforms like **Netflix, Amazon Prime, and YouTube** to personalize user experience.
 
-Processes movie metadata
+This project implements a **Content-Based Filtering** approach where recommendations are made by analyzing movie attributes rather than user behavior.
 
-Converts textual features into numerical vectors
+### The system:
+- Processes movie metadata  
+- Converts textual features into numerical vectors  
+- Computes similarity scores  
+- Recommends top similar movies  
 
-Computes similarity scores
+---
 
-Recommends top similar movies
+## 🧠 How It Works
 
-🧠 How It Works
+### 1. Data Preprocessing
+- Cleaned and merged multiple movie-related columns  
+- Handled missing values  
+- Extracted relevant textual features  
 
-Data Preprocessing
+### 2. Feature Engineering
+- Combined genres, keywords, cast, and crew into a single tag  
+- Applied text normalization (lowercasing, stemming)  
 
-Cleaned and merged multiple movie-related columns
+### 3. Vectorization
+- Used **CountVectorizer** to convert text into vectors  
 
-Handled missing values
+### 4. Similarity Calculation
+- Computed **Cosine Similarity** between movie vectors  
 
-Extracted relevant textual features
+### 5. Recommendation Logic
+- Given a movie title, the system returns the **Top N similar movies**
 
-Feature Engineering
+---
 
-Combined genres, keywords, cast, and crew into a single tag
+## 📂 Project Structure
 
-Applied text normalization (lowercasing, stemming)
-
-Vectorization
-
-Used CountVectorizer to convert text into vectors
-
-Similarity Calculation
-
-Computed Cosine Similarity between movie vectors
-
-Recommendation Logic
-
-Given a movie title, the system returns the Top N similar movies
-
-📂 Project Structure
 Movie-Recommendation-System/
 │
-├── move_recommending_part2.ipynb   # Main Jupyter Notebook
-├── data/                           # Dataset files (if added)
-├── images/                         # Screenshots / diagrams
-└── README.md                       # Project documentation
-🛠 Tech Stack
+├── move_recommending_part2.ipynb # Main Jupyter Notebook
+├── data/ # Dataset files (if added)
+├── images/ # Screenshots / diagrams
+└── README.md # Project documentation
 
-Programming Language: Python
+---
 
-Libraries:
+## 🛠 Tech Stack
 
-pandas
+**Programming Language:**  
+- Python  
 
-numpy
+**Libraries:**  
+- pandas  
+- numpy  
+- scikit-learn  
+- nltk  
 
-scikit-learn
+**ML Concepts:**  
+- Content-Based Filtering  
+- Cosine Similarity  
+- NLP preprocessing  
 
-nltk
+---
 
-ML Concepts:
-
-Content-Based Filtering
-
-Cosine Similarity
-
-NLP preprocessing
-
-📊 Sample Output
-
-Input:
-
-Movie: Inception
-
-Recommended Movies:
-
-1. Interstellar
-2. The Prestige
-3. Shutter Island
-4. The Dark Knight
-5. Memento
-📸 Screenshots (Optional)
-
+## 📊 Sample Output
 ![git](https://github.com/amanrawat262/movie-recommendation-system/assets/117387452/5e2f951d-aa74-4cb6-af84-cbbc704f880e)
 
-🧩 What I Learned From This Project
 
-How real-world recommendation systems work
+---
 
-Feature extraction from unstructured text
+## 🧩 What I Learned From This Project
 
-Vector space models and similarity metrics
+- How real-world recommendation systems work  
+- Feature extraction from unstructured text  
+- Vector space models and similarity metrics  
+- Importance of data preprocessing in ML  
+- Practical use of NLP in ML projects  
 
-Importance of data preprocessing in ML
+---
 
-Practical use of NLP in ML projects
+## 🔮 Future Improvements
 
-🔮 Future Improvements
+- Add Collaborative Filtering  
+- Hybrid recommendation approach  
+- Deploy using Streamlit / FastAPI  
+- Integrate user ratings  
+- Improve recommendations using TF-IDF or Word Embeddings  
 
-Add Collaborative Filtering
+---
 
-Hybrid recommendation approach
+## ⚙️ How to Run the Project
 
-Deploy using Streamlit / FastAPI
-
-Integrate user ratings
-
-Improve recommendations using TF-IDF or Word Embeddings
-
-⚙️ How to Run the Project
-
-Clone the repository
-
+### 1. Clone the repository
+```bash
 git clone https://github.com/your-username/movie-recommendation-system.git
 
-Install dependencies
-
+### 2. Install dependencies
 pip install -r requirements.txt
 
-Run the notebook
-
+### 2. Run the notebook
 jupyter notebook move_recommending_part2.ipynb
+exit
+
 👤 Author
 
 Aman Rawat
