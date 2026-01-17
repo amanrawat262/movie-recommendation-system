@@ -100,15 +100,17 @@ Movie-Recommendation-System/
 ## ⚙️ How to Run the Project
 
 ### 1. Clone the repository
-```bash
+
 git clone https://github.com/your-username/movie-recommendation-system.git
 
+'''bash
 ### 2. Install dependencies
 pip install -r requirements.txt
-
+'''
+'''bash
 ### 2. Run the notebook
 jupyter notebook move_recommending_part2.ipynb
-exit
+'''
 
 👤 Author
 
